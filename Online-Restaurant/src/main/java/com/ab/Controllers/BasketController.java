@@ -53,8 +53,6 @@ public class BasketController {
 	// will delete
 	model.addAttribute("result",result);
 		
-	// possible solution!!!!
-	// https://www.youtube.com/watch?v=Dib2J6ltOo4 
 		return "basket";
 
 	}
