@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+
+	<div align="center">
+		<h1>list of Menu Items !!</h1>
+
+	</div>
+
+	<table align="center" border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<td>Item Code</td>
+				<td>Item Name</td>
+				<td> Item Price</td>
+				<td> Action</td>
+
+			</tr>
+		</thead>
+
+		<tbody>
+			<!-- loop through data like java loop-->
+			<tr th:each="item : ${list}">
+				<td th:text="${item.itemCode}"> ItemCode</td>
+				<td th:text="${item.name}">Item Name</td>
+				<td th:text="${item.price}">Item Price</td>
+
+				<td>
+					<!--add logic to add item to basket-->
+					<a th:href="@{'/add/'+${item.id}}">Add to basket</a>
+				</td>
+
+			</tr>
+		</tbody>
+
+	</table>
+
+	<form action="/view-basket">
+		<div>
+
+			<input type="submit" value=" view basket" />
+		</div>
+
+	</form>
+
+</body>
+
+</html>

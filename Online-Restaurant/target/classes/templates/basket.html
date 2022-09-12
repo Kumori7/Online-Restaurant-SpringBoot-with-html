@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+
+	<div align="center">
+		<h1> view basket!!</h1>
+
+	</div>
+
+
+	<table align="center" border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<td>Item Name</td>
+				<td> Item Price</td>
+				<td> Action</td>
+
+			</tr>
+		</thead>
+
+		<tbody>
+			<!-- loop through data like java loop-->
+			<tr th:each="item : ${list}">
+				<td th:text="${item.name}">Item Name</td>
+				<td th:text="${item.price}">Item Price</td>
+
+				<td>
+					<!--add logic to add item to basket-->
+					<a >Remove</a>
+				</td>
+
+			</tr>
+		</tbody>
+
+	</table>
+
+    <h1 th:text="${result}"></h1>
+    
+
+
+
+
+	<form action="/display">
+		<div>
+
+			<input type="submit" value=" item menu page" />
+		</div>
+
+	</form>
+
+</body>
+
+</html>
