@@ -4,25 +4,6 @@ Online Restaurant (work in progress)
 
 This is a Java Spring boot application i am currently working on which is in early stages before ready for completion.
 
- Planned functionaility 
-
-#login system
-
-#update login details
-
-#create menu item using postman client
-
-#auto generate menu item code for every created item for order
-
-#Display a list of menu items with name, price and item code
-
-#use a shoppping cart to store items, remove items and update cart total price
-
-#5% service charge added to cost based on 5% of total order price
-
-# minimum order fee for total cost of order
-
-#add cart list to checkout to create order history to store order details in database with order creation date
 
 
 
