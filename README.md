@@ -5,8 +5,19 @@ Online Restaurant (work in progress)
 This is a Java Spring boot application i am currently working on which is in early stages before ready for completion.
 
 
+0) Project code structure 
+
+![image](https://user-images.githubusercontent.com/73298685/192092754-625cb9bf-7ba9-4aa5-bc75-607aef719d3e.png)
 
 
+0.2) Project html files 
+
+![image](https://user-images.githubusercontent.com/73298685/192092782-20e4cb12-6243-42e6-882b-4012748944c0.png)
+
+
+0.3) Application properties 
+
+![image](https://user-images.githubusercontent.com/73298685/192092805-86454ad9-70cf-4cf1-9e03-219244b8525d.png)
 
 
 1) Database storing item details 
@@ -20,6 +31,7 @@ This is a Java Spring boot application i am currently working on which is in ear
 
 3) basket page (incomplete)
 
-![image](https://user-images.githubusercontent.com/73298685/189693231-e46edf75-d816-4c71-8e9b-c4c158e02f58.png)
+![image](https://user-images.githubusercontent.com/73298685/192092722-6ae56ead-e801-4e8a-8ae7-b3f11e4ba8d7.png)
+
 
 
