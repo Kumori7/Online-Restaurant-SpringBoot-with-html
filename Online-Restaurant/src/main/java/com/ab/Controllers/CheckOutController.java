@@ -21,21 +21,26 @@ public class CheckOutController {
 	@RequestMapping("/checkout")
 	public String checkoutPage(Model model) {
 
+		double totalCost = basketServiceImpl.getTotalPrice();
+
 		double totalCostWithServiceCharge = serviceImpl.getTotalPriceWithService();
 
 		double serviceCharge = serviceImpl.getServiceChargePrice();
 
 		int cartSize = basketServiceImpl.totalCartSize();
 
-		
-
-		// create controller methods for checkout service layer
-		CheckOut checkOutItem = new CheckOut(totalCostWithServiceCharge, cartSize);
+		// may need
+		//// create controller methods for checkout service layer
+		//// CheckOut checkOutItem = new CheckOut(totalCostWithServiceCharge, cartSize);
 
 		// may display list of checkOut objects to easily remove it with inbuilt methods
 		// instead of passing checkOut object it self into html for displaying data
 
 		// will display checkout object here
+
+		model.addAttribute("orderQuantity", cartSize);
+		
+		model.addAttribute("totalCost", totalCost);
 
 		model.addAttribute("serviceCharge", serviceCharge);
 
