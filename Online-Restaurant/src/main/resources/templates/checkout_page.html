@@ -14,10 +14,29 @@
 	</div>
 
 
+	<table align="center" border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<td>Order Quantity</td>
+				<td> Total Price</td>
+
+			</tr>
+		</thead>
+
+		<tbody>
+			<td th:text="${orderQuantity}"></td>
+			<td th:text="${totalCost}"></td>
+
+
+		</tbody>
+
+	</table>
+
+
 
 	total quantiy (testing):
 	<p th:text="${orderQuantity}"></p>
-	
+
 	total price (testing):
 	<p th:text="${totalCost}"></p>
 
