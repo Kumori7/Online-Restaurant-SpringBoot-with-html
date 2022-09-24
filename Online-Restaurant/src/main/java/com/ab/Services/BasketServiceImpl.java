@@ -17,10 +17,17 @@ public class BasketServiceImpl implements BasketService {
 	@Override
 	public void addToBasket(MenuItem menuItem) {
 
-		cartList.add(menuItem);
-		
+//		if (cartList.contains(menuItem.getId())) {
+//			System.out.println("the item : " + menuItem + " already in basket");
+//
+//		} else {
+//			cartList.add(menuItem);
+//
+//			totalPrice = totalPrice + menuItem.getPrice();
+//		}
 
-		
+		cartList.add(menuItem);
+
 		totalPrice = totalPrice + menuItem.getPrice();
 
 	} // end of addToBasket
@@ -33,26 +40,21 @@ public class BasketServiceImpl implements BasketService {
 			System.out.println("The basket is empty cannot remove item!");
 
 		} else {
-			System.out.println("item: " + menuItem.getName() + " will be removed from basket");
+			System.out.println("item: " + menuItem.getName() + " will be removed from  basket");
 
 			totalPrice = totalPrice - menuItem.getPrice();
 
-			//cartList.remove(menuItem);
-			
-			cartList.clear();
+			for (int i = 0; i < cartList.size(); i++) {
+				if (cartList.get(i).getId() == menuItem.getId()) {
+					cartList.remove(i);
+				}
+			} // loop
+
+		} // else
+
+		if (cartList.isEmpty()) {
+			totalPrice = 0.0;
 		}
-		
-		
-		
-
-		//if (cartList.contains(menuItem)) {
-
-//			System.out.println("item: " + menuItem.getName() + "will be removed from basket");
-//
-//			totalPrice = totalPrice - menuItem.getPrice();
-//
-//			cartList.remove(menuItem);
-		//}
 
 	} // end of removeItemFromBasket
 

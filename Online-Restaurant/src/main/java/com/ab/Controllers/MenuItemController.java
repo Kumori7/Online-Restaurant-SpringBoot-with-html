@@ -16,6 +16,7 @@ public class MenuItemController {
 	@Autowired
 	private MenuItemServiceImpl serviceImpl;
 
+	// for testing purposes
 	@RequestMapping("/test")
 	public String test() {
 

@@ -30,13 +30,14 @@ public class BasketRestController {
 		// finding menuItem object based on id
 		MenuItem menuItem = repository.findById(id).orElse(null);
 
-		//System.out.println("add to basket: " + menuItem.getId() + " " + menuItem.getName());
+		// System.out.println("add to basket: " + menuItem.getId() + " " +
+		// menuItem.getName());
 
 		// once we got the object want to pass into add to basket method
 		serviceImpl.addToBasket(menuItem);
 	}
 
-	// fix!
+	// work
 	@DeleteMapping("/remove/rest/{id}")
 	public void removeItemFromBasket(@PathVariable("id") int id) {
 

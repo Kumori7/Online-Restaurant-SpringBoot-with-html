@@ -21,16 +21,42 @@ public class BasketController {
 	@Autowired
 	private MenuItemRepository repository;
 
+	// get request
 	@RequestMapping("/view-basket")
 	public String basketPage(Model model) {
 
 		List<MenuItem> basketList = serviceImpl.displayBasket();
 
-		model.addAttribute("list", basketList);
+		double value = serviceImpl.getTotalPrice();
 
+		int size = serviceImpl.totalCartSize();
+
+		// method responsible for sending list, price and size data for displaying
+		// information in basket html page
+		model.addAttribute("list", basketList);
+		model.addAttribute("price", value);
+		model.addAttribute("size", size);
+
+		// could have separate controller for price and size and
+		// can't figure out how to have multiple endpoints point
+		// to same html page and have content displayed
 		return "basket";
 	}
 
+	// get request
+	@RequestMapping("/view-price")
+	public void b(Model model) {
+
+		int size = serviceImpl.totalCartSize();
+
+		model.addAttribute("food", size);
+
+		// could have separate controller for price and size and
+		/// just return redirect:/view-basket
+		// this should work
+	}
+
+	// post request
 	@RequestMapping("/add/{id}")
 	public String add(@PathVariable("id") int id) {
 
@@ -39,21 +65,21 @@ public class BasketController {
 
 		serviceImpl.addToBasket(menuItem);
 
+		// redirects "/display" endpoint found in MenuItem controller
 		return "redirect:/display";
 	}
-	
-	// need to fix 
-	@RequestMapping("/total/price")
-	public String  totalPrice(Model model) {
-		
-	// will delete 	
-	double s =	 serviceImpl.getTotalPrice();
-	
-	String result = String.valueOf(s);
-	// will delete
-	model.addAttribute("result",result);
-		
-		return "basket";
+
+	// basket remove feature works now
+	// delete request
+	@RequestMapping("/remove/{id}")
+	public String removeItem(@PathVariable("id") int id) {
+
+		// remove menuItem object based on id
+		MenuItem menuItem = repository.findById(id).orElse(null);
+
+		serviceImpl.removeItemFromBasket(menuItem);
+
+		return "redirect:/view-basket";
 
 	}
 

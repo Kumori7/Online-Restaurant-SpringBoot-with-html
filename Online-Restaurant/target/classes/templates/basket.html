@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
 
+
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Insert title here</title>
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
 
 				<td>
 					<!--add logic to add item to basket-->
-					<a >Remove</a>
+					<a th:href="@{'/remove/'+${item.id}}">Remove</a>
 				</td>
 
 			</tr>
@@ -41,16 +43,26 @@
 
 	</table>
 
-    <h1 th:text="${result}"></h1>
-    
+	Total Price:
+	<p th:text="${price}"></p>
 
-
-
-
+	Cart Size:
+	<p th:text="${size}"></p>
+	
+	
 	<form action="/display">
 		<div>
-
+	
 			<input type="submit" value=" item menu page" />
+		</div>
+	
+	</form>
+	
+	
+	<form action="/checkout">
+		<div>
+
+			<input type="submit" value=" checkout page" />
 		</div>
 
 	</form>
