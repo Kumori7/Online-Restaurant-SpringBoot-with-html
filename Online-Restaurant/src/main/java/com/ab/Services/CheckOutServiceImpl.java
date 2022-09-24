@@ -9,6 +9,18 @@ public class CheckOutServiceImpl implements CheckOutService {
 	@Autowired
 	private BasketServiceImpl basketServiceImpl;
 
+	double serviceCharge = 0.05;
+
+	@Override
+	public double getServiceChargePrice() {
+
+		if (basketServiceImpl.totalCartSize() > 0) {
+			return serviceCharge * basketServiceImpl.getTotalPrice();
+		} else {
+			return 0.0;
+		}
+	}
+
 	@Override
 	public double getTotalPriceWithService() {
 
@@ -16,7 +28,7 @@ public class CheckOutServiceImpl implements CheckOutService {
 
 		System.out.println("orignalPrice before service charge: " + orginalPrice);
 
-		double serviceCharge = 0.05;
+		// double serviceCharge = 0.05;
 
 		double newTotalPriceWithServiceCharge = orginalPrice + (orginalPrice * serviceCharge);
 
@@ -25,10 +37,4 @@ public class CheckOutServiceImpl implements CheckOutService {
 		return newTotalPriceWithServiceCharge;
 	}
 
-	@Override
-	public int totalCartSize() {
-
-		return basketServiceImpl.totalCartSize();
-	}
-
-}
+} // end of class

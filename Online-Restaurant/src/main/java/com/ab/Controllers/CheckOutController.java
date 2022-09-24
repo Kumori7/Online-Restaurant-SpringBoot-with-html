@@ -15,25 +15,31 @@ public class CheckOutController {
 	@Autowired
 	private CheckOutServiceImpl serviceImpl;
 
+	@Autowired
+	private BasketServiceImpl basketServiceImpl;
+
 	@RequestMapping("/checkout")
 	public String checkoutPage(Model model) {
 
-		double totalPrice = serviceImpl.getTotalPriceWithService();
+		double totalCostWithServiceCharge = serviceImpl.getTotalPriceWithService();
 
-		int cartSize = serviceImpl.totalCartSize();
+		double serviceCharge = serviceImpl.getServiceChargePrice();
 
-		// todo for code 
-		// will put in add to list method ill create
-		// s0 i can easily add to list and remove if user not happy with checkout items
-		// this will clear basket list as well 
+		int cartSize = basketServiceImpl.totalCartSize();
+
 		
+
 		// create controller methods for checkout service layer
-		CheckOut checkOutItem = new CheckOut(totalPrice, cartSize);  
+		CheckOut checkOutItem = new CheckOut(totalCostWithServiceCharge, cartSize);
 
 		// may display list of checkOut objects to easily remove it with inbuilt methods
 		// instead of passing checkOut object it self into html for displaying data
 
 		// will display checkout object here
+
+		model.addAttribute("serviceCharge", serviceCharge);
+
+		model.addAttribute("totalCostWithServiceCharge", totalCostWithServiceCharge);
 
 		return "checkout_page";
 	}
