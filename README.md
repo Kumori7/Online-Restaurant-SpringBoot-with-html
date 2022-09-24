@@ -34,4 +34,10 @@ This is a Java Spring boot application i am currently working on which is in ear
 ![image](https://user-images.githubusercontent.com/73298685/192092722-6ae56ead-e801-4e8a-8ae7-b3f11e4ba8d7.png)
 
 
+4) check out page (incomplete)
+
+![image](https://user-images.githubusercontent.com/73298685/192103645-59fa0f9d-2afd-4651-ab16-51f729f0ca38.png)
+
+
+
 
