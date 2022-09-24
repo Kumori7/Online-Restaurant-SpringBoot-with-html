@@ -43,19 +43,6 @@ public class BasketController {
 		return "basket";
 	}
 
-	// get request
-	@RequestMapping("/view-price")
-	public void b(Model model) {
-
-		int size = serviceImpl.totalCartSize();
-
-		model.addAttribute("food", size);
-
-		// could have separate controller for price and size and
-		/// just return redirect:/view-basket
-		// this should work
-	}
-
 	// post request
 	@RequestMapping("/add/{id}")
 	public String add(@PathVariable("id") int id) {

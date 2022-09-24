@@ -1,7 +1,9 @@
 package com.ab.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CheckOutServiceImpl implements CheckOutService {
 
 	@Autowired
