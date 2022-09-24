@@ -25,7 +25,7 @@
 
 		<tbody>
 			<td th:text="${orderQuantity}"></td>
-			<td th:text="${totalCost}"></td>
+			<td th:text="${totalCostWithServiceCharge}"></td>
 
 
 		</tbody>
@@ -37,8 +37,8 @@
 	total quantiy (testing):
 	<p th:text="${orderQuantity}"></p>
 
-	total price (testing):
-	<p th:text="${totalCost}"></p>
+	total price with service charge (testing):
+	<p th:text="${totalCostWithServiceCharge}"></p>
 
 
 
@@ -50,8 +50,8 @@
 
 
 
-	Total Price with 5% service charge:
-	<p th:text="${totalCostWithServiceCharge}"></p>
+	Total Price original value:
+	<p th:text="${totalCost}"></p>
 
 	<!-- buttons -->
 	<form action="/view-basket">
