@@ -26,6 +26,10 @@ This is a Java Spring boot application i am currently working on which is in ear
 
 ![image](https://user-images.githubusercontent.com/73298685/189692187-db1ddff4-baf8-4378-b482-82561c7ea978.png)
 
+
+![image](https://user-images.githubusercontent.com/73298685/192147432-cdef21f7-8dfb-4101-9ba4-c7aa1616a17b.png)
+
+
 2) DIsplay menu page 
 
 ![image](https://user-images.githubusercontent.com/73298685/189692699-5bc832d7-35f8-4755-9bde-ddd48e1e3033.png)
