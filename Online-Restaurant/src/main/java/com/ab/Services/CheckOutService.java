@@ -6,7 +6,4 @@ public interface CheckOutService {
 
 	public double getTotalPriceWithService();
 	
-
-	// public String creationTime();
-
 }

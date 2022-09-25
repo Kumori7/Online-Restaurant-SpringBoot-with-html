@@ -16,19 +16,6 @@ public class MenuItemController {
 	@Autowired
 	private MenuItemServiceImpl serviceImpl;
 
-	// for testing purposes
-	@RequestMapping("/test")
-	public String test() {
-
-		return "test";
-	}
-
-	@RequestMapping("/")
-	public String startPage() {
-
-		return "start_page";
-	}
-
 	@RequestMapping("/display")
 	public String displayMenuItems(Model model) {
 

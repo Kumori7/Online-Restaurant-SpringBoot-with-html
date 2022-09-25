@@ -33,18 +33,6 @@
 	</table>
 
 
-
-	total quantiy (testing):
-	<p th:text="${orderQuantity}"></p>
-
-	total price with service charge (testing):
-	<p th:text="${totalCostWithServiceCharge}"></p>
-
-
-
-
-
-
 	5% service charge:
 	<p th:text="${serviceCharge}"></p>
 
@@ -63,7 +51,7 @@
 	</form>
 
 
-	<form action="">
+	<form action="/create_receipt">
 		<div>
 
 			<input type="submit" value=" complete order" />

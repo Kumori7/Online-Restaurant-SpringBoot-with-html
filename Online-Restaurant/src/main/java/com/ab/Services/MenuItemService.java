@@ -12,4 +12,4 @@ public interface MenuItemService {
 
 	public void deleteMenuItemById(int id);
 
-} // end of class
+} // end of interface
