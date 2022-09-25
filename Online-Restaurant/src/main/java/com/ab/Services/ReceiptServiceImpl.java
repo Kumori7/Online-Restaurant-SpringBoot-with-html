@@ -42,12 +42,14 @@ public class ReceiptServiceImpl implements ReceiptService {
 	public void createReceipt(double totalCost, int orderQuantity) {
 
 		String generatedCode = itemCode.generateItemCode();
+		
+		String receiptCode = "Order:" + generatedCode;
 
 		String creationTime = creationTimeOfReceipt();
 
 		Receipt receipt = new Receipt();
 
-		receipt.setReceiptCode(generatedCode);
+		receipt.setReceiptCode(receiptCode);
 
 		receipt.setDateCreated(creationTime);
 
