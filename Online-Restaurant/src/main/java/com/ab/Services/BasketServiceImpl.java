@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.ab.Entities.MenuItem;
 
 @Service
-public class BasketServiceImpl implements BasketService {
+public class BasketServiceImpl implements BasketService, BasketServiceTwo {
 
 	private double totalPrice = 0.0;
 
