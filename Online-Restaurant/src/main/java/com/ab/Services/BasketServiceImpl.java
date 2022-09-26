@@ -59,6 +59,13 @@ public class BasketServiceImpl implements BasketService {
 	} // end of removeItemFromBasket
 
 	@Override
+	public void clearBasket() {
+
+		cartList.clear();
+
+	}
+
+	@Override
 	public List<MenuItem> displayBasket() {
 
 		return cartList;
@@ -68,6 +75,12 @@ public class BasketServiceImpl implements BasketService {
 	public double getTotalPrice() {
 
 		return totalPrice;
+	}
+
+	@Override
+	public void setTotalPrice(double totalPrice) {
+
+		this.totalPrice = totalPrice;
 	}
 
 	@Override

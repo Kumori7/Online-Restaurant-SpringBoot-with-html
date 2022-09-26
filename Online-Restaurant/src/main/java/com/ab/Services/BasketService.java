@@ -10,9 +10,13 @@ public interface BasketService {
 
 	public void removeItemFromBasket(MenuItem menuItem);
 
+	public void clearBasket();
+
 	public List<MenuItem> displayBasket();
 
 	public double getTotalPrice();
+
+	public void setTotalPrice(double totalPrice);
 
 	public int totalCartSize();
 

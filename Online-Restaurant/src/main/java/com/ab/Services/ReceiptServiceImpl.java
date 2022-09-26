@@ -20,6 +20,9 @@ public class ReceiptServiceImpl implements ReceiptService {
 	private ReceiptRepository receiptRepository;
 
 	@Autowired
+	private BasketServiceImpl basketServiceImpl;
+
+	@Autowired
 	private ItemCode itemCode;
 
 	// the format want to use to display receipt item creation date
@@ -57,9 +60,16 @@ public class ReceiptServiceImpl implements ReceiptService {
 
 		receipt.setOrderQuantity(orderQuantity);
 
-		// need to save to db now
-
 		receiptRepository.save(receipt);
+
+		// need to clear basket after receipt is created or will stay
+		// items in basket if i dont clear them
+
+		basketServiceImpl.clearBasket();
+
+		// if i dont reset basket price will remember old basket price
+		// during previous receipt creation
+		basketServiceImpl.setTotalPrice(0.0);
 
 	}
 
