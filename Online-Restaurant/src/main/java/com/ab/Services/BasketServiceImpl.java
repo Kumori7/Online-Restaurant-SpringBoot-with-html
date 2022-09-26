@@ -52,6 +52,9 @@ public class BasketServiceImpl implements BasketService, BasketServiceTwo {
 
 		} // else
 
+		// program got a error if i have 3 of the same item
+		// and i remove it from basket 
+		// the totalPrice needs to be reseted or will remember old total price
 		if (cartList.isEmpty()) {
 			totalPrice = 0.0;
 		}
@@ -61,6 +64,9 @@ public class BasketServiceImpl implements BasketService, BasketServiceTwo {
 	@Override
 	public void clearBasket() {
 
+		// after receipt is created
+		// need to clear basket or program
+		// remember old items to create previous receipt
 		cartList.clear();
 
 	}
@@ -80,6 +86,8 @@ public class BasketServiceImpl implements BasketService, BasketServiceTwo {
 	@Override
 	public void setTotalPrice(double totalPrice) {
 
+		// after receipt created
+		// need to reset total price
 		this.totalPrice = totalPrice;
 	}
 

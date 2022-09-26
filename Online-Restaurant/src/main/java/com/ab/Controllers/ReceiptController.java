@@ -30,8 +30,15 @@ public class ReceiptController {
 
 		receiptServiceImpl.createReceipt(totalCost, orderQuantity);
 
-		// will return success page for creation of receipt
-		return "test";
+		if (totalCost <= 0 && orderQuantity <= 0) {
+			// if total cost is zero need to
+			// stop it saving to db or delete it
+			return "empty_basket_failed_order";
+		} else {
+			return "test";
+
+		}
+
 	}
 
 } // end of class
