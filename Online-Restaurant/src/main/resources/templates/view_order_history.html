@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<div align="center">
+		<h1> checkout page</h1>
+	</div>
+
+
+
+	<table align="center" border="1" cellpadding="10">
+		<thead>
+			<tr>
+				<td>Receipt Code</td>
+				<td>Item Quantity</td>
+				<td>Date Created</td>
+				<td>Total Cost</td>
+
+			</tr>
+		</thead>
+
+		<tbody>
+			<!-- loop through data like java loop-->
+			<tr th:each="receipt : ${receiptsList}">
+				<td th:text="${receipt.receiptCode}"></td>
+				<td th:text="${receipt.orderQuantity}"></td>
+				<td th:text="${receipt.dateCreated}"></td>
+				<td th:text="${receipt.totalPriceWithServiceCharge}"></td>
+
+			</tr>
+		</tbody>
+
+	</table>
+
+</body>
+
+</html>
