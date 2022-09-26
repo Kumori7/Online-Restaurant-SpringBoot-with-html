@@ -7,7 +7,8 @@ This is a Java Spring boot application i am currently working on which is in ear
 
 0) Project code structure 
 
-![image](https://user-images.githubusercontent.com/73298685/192147079-512ebcd6-cb7f-43aa-92a0-8950c7c44d87.png)
+![image](https://user-images.githubusercontent.com/73298685/192267060-34c94486-0d99-4d22-8cb7-bfd11d9aee12.png)
+
 
 
 
