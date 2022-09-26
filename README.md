@@ -10,12 +10,10 @@ This is a Java Spring boot application i am currently working on which is in ear
 ![image](https://user-images.githubusercontent.com/73298685/192267060-34c94486-0d99-4d22-8cb7-bfd11d9aee12.png)
 
 
-
-
-
 0.2) Project html files 
 
-![image](https://user-images.githubusercontent.com/73298685/192092782-20e4cb12-6243-42e6-882b-4012748944c0.png)
+![image](https://user-images.githubusercontent.com/73298685/192268539-ecdf795e-7b47-44a2-8085-e141575c7408.png)
+
 
 
 0.3) Application properties 
