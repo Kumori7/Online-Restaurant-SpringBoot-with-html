@@ -67,8 +67,9 @@ public class ReceiptServiceImpl implements ReceiptService {
 
 		basketServiceImpl.clearBasket();
 
-		// if i dont reset basket price will remember old basket price
-		// during previous receipt creation
+		// if i dont reset basket price, 
+		// program will remember old basket price
+		// from previous receipt creation
 		basketServiceImpl.setTotalPrice(0.0);
 
 	}

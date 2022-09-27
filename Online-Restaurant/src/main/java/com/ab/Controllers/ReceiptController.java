@@ -32,9 +32,8 @@ public class ReceiptController {
 		int orderQuantity = basketServiceImpl.totalCartSize();
 
 		if (totalCost <= 0 && orderQuantity <= 0) {
-			// if total cost is zero need to
-			// stop it saving to db
-			// so a receipt with zero items is not created
+
+			// prevents a receipt with total cost = 0 from being created
 			return "empty_basket_failed_order";
 		} else {
 
