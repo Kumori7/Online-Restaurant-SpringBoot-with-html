@@ -43,9 +43,9 @@ public class CheckOutServiceImpl implements CheckOutService {
 
 		df.setRoundingMode(RoundingMode.UP);
 
-		String result = df.format(newTotalPriceWithServiceCharge);
+		String totalPriceWithServiceChargeRoundUp = df.format(newTotalPriceWithServiceCharge);
 
-		double output = Double.parseDouble(result);
+		double output = Double.parseDouble(totalPriceWithServiceChargeRoundUp);
 
 		return output;
 	}
