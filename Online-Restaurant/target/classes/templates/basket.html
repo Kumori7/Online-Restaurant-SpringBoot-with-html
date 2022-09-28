@@ -6,20 +6,37 @@
 	<meta charset="ISO-8859-1">
 	<title>Insert title here</title>
 
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			background-color: #D6EEEE;
+
+		}
+
+		th,
+		td {
+			text-align: left;
+			padding: 8px;
+		}
+	</style>
+
+
 </head>
 
 <body>
 
 
 	<div align="center">
-		<h1> view basket!!</h1>
+		<h1> view basket</h1>
 
 	</div>
 
 
 	<table align="center" border="1" cellpadding="10">
 		<thead>
-			<tr>
+			<!-- effect colour of top row -->
+			<tr bgcolor="#CF9FFF">
 				<td>Item Name</td>
 				<td> Item Price</td>
 				<td> Action</td>
@@ -48,17 +65,17 @@
 
 	Cart Size:
 	<p th:text="${size}"></p>
-	
-	
+
+
 	<form action="/display">
 		<div>
-	
+
 			<input type="submit" value=" item menu page" />
 		</div>
-	
+
 	</form>
-	
-	
+
+
 	<form action="/checkout">
 		<div>
 
