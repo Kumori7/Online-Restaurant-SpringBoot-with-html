@@ -59,6 +59,10 @@ updated check out page
 
 ![image](https://user-images.githubusercontent.com/73298685/196763639-9553c051-4318-4427-a06c-b8e9e8d778e5.png)
 
+5) view order history page 
 
+![image](https://user-images.githubusercontent.com/73298685/196763813-71f2cd40-d067-4f3b-92b1-f7b96407f47a.png)
+
+after order created and saved into database i retrieve all order history to display in this table here
 
 
