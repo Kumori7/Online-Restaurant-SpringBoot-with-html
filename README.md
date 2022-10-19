@@ -34,6 +34,12 @@ This is a Java Spring boot application i am currently working on which is in ear
 ![image](https://user-images.githubusercontent.com/73298685/189692699-5bc832d7-35f8-4755-9bde-ddd48e1e3033.png)
 
 
+updated 
+
+![image](https://user-images.githubusercontent.com/73298685/196763164-ff833751-15dd-4a79-949e-ed9961a82d51.png)
+
+
+
 3) basket page (incomplete)
 
 ![image](https://user-images.githubusercontent.com/73298685/192092722-6ae56ead-e801-4e8a-8ae7-b3f11e4ba8d7.png)
