@@ -34,7 +34,7 @@ This is a Java Spring boot application i am currently working on which is in ear
 ![image](https://user-images.githubusercontent.com/73298685/189692699-5bc832d7-35f8-4755-9bde-ddd48e1e3033.png)
 
 
-updated 
+updated Display menu page
 
 ![image](https://user-images.githubusercontent.com/73298685/196763164-ff833751-15dd-4a79-949e-ed9961a82d51.png)
 
@@ -43,6 +43,12 @@ updated
 3) basket page (incomplete)
 
 ![image](https://user-images.githubusercontent.com/73298685/192092722-6ae56ead-e801-4e8a-8ae7-b3f11e4ba8d7.png)
+
+
+updated basket page 
+
+
+![image](https://user-images.githubusercontent.com/73298685/196763420-a5b74a22-91f4-4a86-93b2-7799f3a0fb09.png)
 
 
 4) check out page (incomplete)
