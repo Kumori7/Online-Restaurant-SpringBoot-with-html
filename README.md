@@ -55,6 +55,10 @@ updated basket page
 
 ![image](https://user-images.githubusercontent.com/73298685/192103645-59fa0f9d-2afd-4651-ab16-51f729f0ca38.png)
 
+updated check out page 
+
+![image](https://user-images.githubusercontent.com/73298685/196763639-9553c051-4318-4427-a06c-b8e9e8d778e5.png)
+
 
 
 
