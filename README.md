@@ -1,5 +1,5 @@
 # Online-Restaurant-work-in-progress-
-Online Restaurant (work in progress)
+Online Restaurant 
 
 
 This is a Java Spring boot application i am currently working on which is in early stages before ready for completion.
