@@ -2,7 +2,17 @@
 Online Restaurant 
 
 
-This is a Java Spring boot application i am currently working on which is in early stages before ready for completion.
+This is a Java Spring boot application i have developed, the application has the following feature sets,
+
+* ability to draw menu item data from database and display it to user through GET request
+* store and manage new items to be stored in database to show user updated items from database
+* allow users to choose menu items in order to update a basket of items
+* basket can calculate total basket items, total cost of all items in basket
+* have a checkout screeen that shows all items in basket before user purchase items and created a digital receipt
+* 5% service charge cost of total basket price is added ontop of payment when recepit is created
+* create a receipt to be stored in database
+* retrieves all receipts in database and use java streams to format data in table in html
+
 
 
 0) Project code structure 
